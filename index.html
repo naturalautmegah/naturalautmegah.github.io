@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Natura Laut Megah — Indonesian Natural Resources</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════
+       NAV
+       ═══════════════════════════════════════════════════════ -->
+  <nav id="nav">
+    <a href="#" class="logo">
+      <div class="logo-mark">
+        <img src="assets/NLM_LOGO.svg" alt="Company Logo" width="46">
+        <!--<svg viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="23" cy="23" r="21.5" stroke="#c9a84c" stroke-width="1"/>
+          <path d="M23 8 C23 8 34 18 34 26 C34 32 29 36 23 36 C17 36 12 32 12 26 C12 18 23 8 23 8Z" fill="#2d7a5e" opacity="0.85"/>
+          <path d="M15 28 Q19 25 23 28 Q27 31 31 28" stroke="#c9a84c" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+          <path d="M16 31 Q20 28 23 31 Q26 34 30 31" stroke="#c9a84c" stroke-width="0.8" fill="none" stroke-linecap="round" opacity="0.5"/>
+          <path d="M23 12 L23 32" stroke="#e8c97a" stroke-width="0.8" opacity="0.6"/>
+        </svg>-->
+      </div>
+      <div class="logo-text">
+        <span class="name">PT. Natura Laut Megah</span>
+        <span class="tagline">Indonesia Resources</span>
+      </div>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Sourcing</a></li>
+      <li><a href="#">Compliance</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+
+    <a href="#contact" class="nav-cta">Enquire Now</a>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════════════
+       HERO CAROUSEL
+       ═══════════════════════════════════════════════════════ -->
+  <section class="hero">
+
+    <!-- Slide 1 — Oleochemical Factory -->
+    <div class="slide slide-1 active" id="slide-0">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="slide-label">Oleochemical · Crude Glycerine</div>
+        <h1 class="hero-title">Indonesia's <em>Finest</em><br>Oleochemical<br>Production</h1>
+        <p class="hero-sub">World-class processing facilities supplying pharmaceutical and industrial-grade crude glycerine to global markets with full traceability.</p>
+      </div>
+    </div>
+
+    <!-- Slide 2 — Coconut Shell Charcoal Kilns -->
+    <div class="slide slide-2" id="slide-1">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="slide-label">Coconut Shell · Activated Charcoal</div>
+        <h1 class="hero-title">Kilns of<br><em>Ancient</em><br>Craft, Modern<br>Scale</h1>
+        <p class="hero-sub">Sustainably harvested coconut shell charcoal from Sulawesi &amp; Maluku — prized for ultra-high fixed carbon content and low ash residue.</p>
+      </div>
+    </div>
+
+    <!-- Slide 3 — Seaweed Plantation -->
+    <div class="slide slide-3" id="slide-2">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="slide-label">Marine · Seaweed Cultivation</div>
+        <h1 class="hero-title">Vast Ocean<br><em>Gardens</em><br>of the East</h1>
+        <p class="hero-sub">From the crystal waters of Nusa Tenggara and Sulawesi — premium Eucheuma cottonii and spinosum for carrageenan and agar industries worldwide.</p>
+      </div>
+    </div>
+
+    <!-- Carousel Controls -->
+    <div class="carousel-controls">
+      <button class="ctrl-btn" id="prevBtn" aria-label="Previous slide">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <polyline points="15 18 9 12 15 6"/>
+        </svg>
+      </button>
+      <div class="dots">
+        <div class="dot active" data-idx="0"></div>
+        <div class="dot" data-idx="1"></div>
+        <div class="dot" data-idx="2"></div>
+      </div>
+      <button class="ctrl-btn" id="nextBtn" aria-label="Next slide">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <polyline points="9 18 15 12 9 6"/>
+        </svg>
+      </button>
+      <span class="slide-counter" id="counter">01 / 03</span>
+    </div>
+
+    <!-- Right-side product tags -->
+    <div class="product-tags">
+      <span class="p-tag active-tag" data-idx="0">Crude Glycerine</span>
+      <span class="p-tag" data-idx="1">Coconut Charcoal</span>
+      <span class="p-tag" data-idx="2">Seaweed</span>
+    </div>
+
+    <!-- Scroll hint -->
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+
+    <!-- Progress bar -->
+    <div class="progress-bar" id="progressBar"></div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       ABOUT
+       ═══════════════════════════════════════════════════════ -->
+  <section class="about">
+    <div>
+      <h2 class="about-headline">Bridging <em>Global Demand</em> with Indonesia's Natural Wealth</h2>
+      <div class="gold-line"></div>
+      <p class="about-body">Natura Laut Megah is a Jakarta-based trading and brokerage house specialising in the export of Indonesia's most coveted natural commodities. We serve as the trusted bridge between international buyers and our network of verified Indonesian producers — ensuring quality, compliance, and reliable supply chains from source to port.</p>
+    </div>
+    <div>
+      <p class="about-body">With deep local expertise and a transparent approach to international trade, we handle end-to-end logistics, documentation, quality certification, and regulatory compliance. Whether you are a European pharmaceutical manufacturer, a Japanese food ingredient distributor, or a Korean cosmetics group — we are your single point of contact for Indonesian natural resources.</p>
+      <div class="stat-row">
+        <div class="stat">
+          <span class="stat-num">18+</span>
+          <span class="stat-label">Countries Served</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">300+</span>
+          <span class="stat-label">Metric Tons / Month</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">ISO</span>
+          <span class="stat-label">Certified Supply Chain</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       PRODUCTS
+       ═══════════════════════════════════════════════════════ -->
+  <section class="products">
+    <div class="section-label">— Our Commodities</div>
+    <div class="product-grid">
+
+      <div class="product-card">
+        <span class="product-icon">⚗️</span>
+        <div class="product-name">Crude Glycerine</div>
+        <p class="product-desc">By-product of Indonesia's vast palm and coconut oil refining industry. Available in 80%+ purity for industrial applications, and refined grades for pharmaceutical and food use.</p>
+        <div class="product-spec">Purity · 80–99.5% · Bulk / ISO Tank · MSDS Available</div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-icon">🌿</span>
+        <div class="product-name">Coconut Shell Charcoal</div>
+        <p class="product-desc">Sustainably produced from Sulawesi and East Indonesian coconut groves. High fixed carbon (75–80%), ultra-low ash, and consistent sizing for activated carbon upgrading.</p>
+        <div class="product-spec">FC 75–80% · Moisture &lt;8% · 25kg Bags / Bulk</div>
+      </div>
+
+      <div class="product-card">
+        <span class="product-icon">🌊</span>
+        <div class="product-name">Seaweeds</div>
+        <p class="product-desc">Premium dried Eucheuma cottonii and spinosum from pristine Indonesian waters. Consistently high gel strength and viscosity for carrageenan, agar-agar, and food ingredient markets.</p>
+        <div class="product-spec">Moisture &lt;35% · Salt &lt;3% · Dried / Sun-cured</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       CTA
+       ═══════════════════════════════════════════════════════ -->
+  <section class="cta-section" id="contact">
+    <div class="cta-text">
+      <h2>Ready to Source from <em>Indonesia</em>?</h2>
+      <p>Our trade desk is available to discuss volume requirements, specifications, shipping terms, and pricing. Let us connect you to the source.</p>
+    </div>
+    <div class="cta-btns">
+      <a href="mailto:trade@naturalautmegah.id" class="btn-primary">Contact Trade Desk</a>
+      <a href="#" class="btn-outline">Download Catalogue</a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════════════════ -->
+  <footer>
+    <span class="footer-copy">© 2024 PT Natura Laut Megah — All Rights Reserved</span>
+    <span class="footer-location">Jakarta · Indonesia · Est. 2011</span>
+  </footer>
+
+  <script src="/jsx/main.js"></script>
+</body>
+</html>
